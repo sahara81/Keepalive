@@ -955,6 +955,7 @@ def main():
     server_thread.start()
 
     application = ApplicationBuilder().token(BOT_TOKEN).build()
+    register_request_system(application, is_admin, OWNER_ID)
 
     application.add_handler(CommandHandler("start", cmd_start))
     application.add_handler(CommandHandler("menu", cmd_menu))
