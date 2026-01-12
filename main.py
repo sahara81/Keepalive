@@ -4,7 +4,6 @@ import logging
 import threading
 import time
 from request_queue import register_request_system
-import htmlgister_request_system
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from random import choice
 from datetime import datetime
